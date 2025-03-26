@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background:linear-gradient(to left, rgba(0, 238, 255, 0.253),#1b0a7a91);
+}#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: transparent;
+    background-image :linear-gradient( to right ,rgb(180, 7, 151),rgba(0, 0, 255, 0.548));
+    background-clip: text;
+
+    padding-top: 1rem;
+}#wraper{
+    
+    display: flex;
+    justify-content: center;
+    align-items:left;
+    flex-direction: column;
+    padding-left: 5rem;
+
+
+}.note {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+p{
+    font-size: 1.6vw ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p img{
+    height: 5rem;
+    position: relative;
+    left: 6px;
+    top: 38px;
+    transition: none;
+    cursor: pointer;
+}.btn{
+    width: 10rem;
+    position:relative;
+    top: -200%;    
+    height: 3rem;
+    border: 1px solid rgb(15, 1, 97);
+    border-radius: 50px;
+    background:linear-gradient(#9418FD,#571094) ;
+    color: #fff;
+    font-size: 1rem;
+    will-change: top, left;
+    left: 20px;
+    top: 43px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    padding: 3px;
+   cursor: pointer;
+
+}.btn:hover{
+    background:linear-gradient(#a53eff,#441969) ;
+    scale: 1.05;
+
+
+}
+
+
+.btn img{
+    height: 1rem;
+}.btn span{
+    padding-left: 4px;
+}.inputbox{
+    position: relative;
+   width: 100%;
+   min-height: 150px;
+    max-width: 500px;
+    color: #000;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+    top: 50px;
+    left: 30px;
+}.inputbox img{
+    top: 1000px;
+    left: 640px;
+
+    width: 25px;
+    height: 20px;
+    position:sticky;
+
+
+}
+@media (max-width:600px)  and (min-width:100px){
+    #wraper{
+        padding-left: 0rem;
+    }
+    #heading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .inputbox{
+       min-height: 300px;
+        max-width: 300px;
+        left: 20px;
+        margin-bottom: 5vw;
+    }
+    
+   
+}
